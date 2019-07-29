@@ -1,0 +1,28 @@
+.signupform {
+    float: left;
+}
+
+.loginform{
+    float: right;
+}
+
+
+.signupform {
+    float: left;
+    display: block; 
+    padding: 5px;
+    margin: 125px;
+    width: 25%;
+    background-color: grey;
+    text-align: center;
+ }
+
+ .loginform {
+    float: right;
+    display: block; 
+    padding: 5px;
+    margin: 125px;
+    width: 25%;
+    background-color: grey;
+    text-align: center;
+ }
