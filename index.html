@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SAMStagram</title>
+        <title>Welcome To MiddleMan!</title>
 
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-
-        <!-- Your Code Here -->
-
-    </body>
+    <!-- Header start line below-->
+    <div class="header">
+    <h1>MiddleMan</h1> <h2 id="login">Log In/Sign Up</h2>  
+    <div class="dropdown">
+ <div class="dropdown">
+  <button onclick="myMenu()" class="button">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Testimontials</a>
+  </div>
+</div>
+</div>
+ </div> <!-- Header ends here-->
+ <div class="searchbox">
+    <input type="text" class="search-field careers" placeholder="Search For Mentors">&nbsp;&nbsp; &nbsp; &nbsp; 
+    <button class="search-btn" type="button">Search!</button>  
+</div>
+<footer>
+  <p>MiddleMan</p>
+  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+</footer>
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
+</body>
 </html>
