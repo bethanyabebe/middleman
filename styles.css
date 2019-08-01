@@ -1,3 +1,27 @@
+.header h1 {
+    color:deepskyblue;
+    text-align: center;
+    font-size: 80px;
+    cursor: pointer;
+}
+.header {
+    border-bottom: solid;
+    border-color: darkorange;
+    border-width: 15px;
+    margin: 0px;
+}
+
+ #login {
+     position: absolute;
+     left: 1800px;
+     top: 63px;
+     color:deepskyblue;
+     font-size: 30px;
+     cursor: pointer
+}
+
+
+
 .signupform {
     float: left;
 }
