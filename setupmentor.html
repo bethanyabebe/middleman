@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <title>Create Your Account</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-            <h2> before you can be paired with a mentee, please provide us with more information </h2>
-            <form id= "signup2">
+            <div class="header">
+                    <h1>MiddleMan</h1>  
+                    <div class="dropdown">
+                 <div class="dropdown">
+                  <button onclick="myMenu()" class="button">Menu</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Testimontials</a>
+                  </div>
+                </div>
+                </div>
+            </div>
+
+            <br>  <br>  <br>  <br>
+            <h4> before you can be paired with a mentee, please provide us with more information </h4>
+            <form id= "signmentor">
+                    <h5>Name </h5> 
+                    <input type="text" id="name" placeholder= "John Doe" required>
+                    <h5>Email </h5> 
+                    <input type="email" id="emailz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder= "youremail@email.com" required >
+                    <h5>Create Password</h5> 
+                    <input type="password" id="passwordz"  placeholder= "password123" required>
+                    <h5>Reenter Password</h5> 
+                    <input type="password" id="passwordz1"  placeholder= "password123" required>
+                    <br>
                     <h4> Address </h4>
-                        Address Line 1  * <input type= "text" required> <br> <br>
-                        Address Line 2  *<input type= "text" required> <br> <br>
-                        City/Town  * <input type= "text"> <br> <br>
+                        Address Line 1  * <input type= "text"  id= "address1" placeholder= "1234 Home Drive" required> <br> <br>
+                        Address Line 2 <input type= "text" id="address2" placeholder= "1234 Home Drive"> <br> <br>
+                        City/Town  * <input type= "text" id= "city" placeholder= "City"> <br> <br>
                         State  *
-                        <select required>
+                        <select id= "state" required>
                                 <option value="">Select State</option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -65,12 +90,12 @@
                                 <option value="WI">Wisconsin</option>
                                 <option value="WY">Wyoming</option>
                             </select> &nbsp; &nbsp; &nbsp; 
-                        Zip Code * <input type= "text" placeholder= "#####" pattern= "[0-9]{5}"required> <br><br><br><br>
+                        Zip Code * <input type= "text" id= "zip" placeholder= "#####" pattern= "[0-9]{5}"required> <br><br><br><br>
                     <h4> Phone Number * </h4>
                         <input type= "tel" id="phone" name= "phone" placeholder= "###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         <br><br><br><br>
                     <h4> Age * </h4>
-                        <select required> 
+                        <select id= "age" required> 
                             <option value=""> Select Age</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
@@ -158,75 +183,89 @@
                         <br><br><br><br>
             
                     <h4> Education Level * </h4>
-                        <select required> 
+                        <select id= "education" required> 
                         <option value=""> Select Education Level </option>
-                        <option value="hs1">Less than high school diploma</option>
-                        <option value="hs2">High school diploma/GED</option>
-                        <option value="ad">Associate's degree</option>
-                        <option value="bd">Bachelor's degree</option>
-                        <option value="md">Master's degree</option>
-                        <option value="phd">Doctoral degree or higher</option>
+                        <option value="Less than high school diploma">Less than high school diploma</option>
+                        <option value="High school diploma/GED">High school diploma/GED</option>
+                        <option value="Associate's degree">Associate's degree</option>
+                        <option value="Bachelor's degree">Bachelor's degree</option>
+                        <option value="Master's degree">Master's degree</option>
+                        <option value="Doctoral degree or higher">Doctoral degree or higher</option>
                         </select>
                         <br><br><br><br>
                     <h4> Current Profession * </h4>
-                        <select required>
+                        <select id= "cprofession" required>
                             <option value=""> Select Current Profession </option>
-                            <option value="p1"> Account Manager </option>
-                            <option value="p2"> Administrative Assistant</option>
-                            <option value="p3"> Case Manager</option>
-                            <option value="p4"> Construction Manager</option>
-                            <option value="p5"> Customer Service Representative</option>
-                            <option value="p6"> Data Analyst</option>
-                            <option value="p7"> Data Engineer</option>
-                            <option value="p8"> Data Scientist</option>
-                            <option value="p9"> Devops Engineer</option>
-                            <option value="p10"> Engineer</option>
-                            <option value="p11"> Financial Analyst</option>
-                            <option value="p12"> HR Manager</option>
-                            <option value="p13"> Intern</option>
-                            <option value="p14"> Lab Technician</option>
-                            <option value="p15"> Marketing Coordinator</option>
-                            <option value="p16"> Marketing Manager</option>
-                            <option value="p17"> Mechanical Engineer</option>
-                            <option value="p18"> Nursing Manager</option>
-                            <option value="p19"> Occupational Therapist</option>
-                            <option value="p20"> Operations Manager</option>
-                            <option value="p21"> Pharmacy Technician</option>
-                            <option value="p22"> Physicial Assistant</option>
-                            <option value="p23"> Product Manager</option>
-                            <option value="p24"> Program Manager</option>
-                            <option value="p25"> Project Manager</option>
-                            <option value="p26"> Research Assistant</option>
-                            <option value="p27"> Sales Associate</option>
-                            <option value="p28"> Sales Engineer</option>
-                            <option value="p29"> Sales Manager</option>
-                            <option value="p30"> Security Engineer</option>
-                            <option value="p31"> Social Media Manager</option>
-                            <option value="p32"> Software Engineer</option>
-                            <option value="p33"> Speech Language Pathologist</option>
-                            <option value="p34"> Strategy Manager</option>
-                            <option value="p35"> Substitute Teacher</option>
-                            <option value="p36"> Teaching Assistant</option>
-                            <option value="p37"> Tutor</option>
-                            <option value="p38"> Web Developer</option>
+                            <option value="Account Manager"> Account Manager </option>
+                            <option value="Administrative Assistant"> Administrative Assistant</option>
+                            <option value="Case Manager"> Case Manager</option>
+                            <option value="Construction Manager"> Construction Manager</option>
+                            <option value="Customer Service Representative"> Customer Service Representative</option>
+                            <option value="Data Analyst"> Data Analyst</option>
+                            <option value="Data Engineer"> Data Engineer</option>
+                            <option value="Data Scientist"> Data Scientist</option>
+                            <option value="Devops Engineer"> Devops Engineer</option>
+                            <option value="Engineer"> Engineer</option>
+                            <option value="Financial Analyst"> Financial Analyst</option>
+                            <option value="HR Manager"> HR Manager</option>
+                            <option value="Intern"> Intern</option>
+                            <option value="Lab Technician"> Lab Technician</option>
+                            <option value="Marketing Coordinator"> Marketing Coordinator</option>
+                            <option value="Marketing Manager"> Marketing Manager</option>
+                            <option value="Mechanical Engineer"> Mechanical Engineer</option>
+                            <option value="Nursing Manager"> Nursing Manager</option>
+                            <option value="Occupational Therapist"> Occupational Therapist</option>
+                            <option value="Operations Manager"> Operations Manager</option>
+                            <option value="Pharmacy Technician"> Pharmacy Technician</option>
+                            <option value="Physical Assistant"> Physical Assistant</option>
+                            <option value="Product Manager"> Product Manager</option>
+                            <option value="Professor"> Professor</option>
+                            <option value="Program Manager"> Program Manager</option>
+                            <option value="Project Manager"> Project Manager</option>
+                            <option value="Research Assistant"> Research Assistant</option>
+                            <option value="Sales Associate"> Sales Associate</option>
+                            <option value="Sales Engineer"> Sales Engineer</option>
+                            <option value="Sales Manager"> Sales Manager</option>
+                            <option value="Security Engineer"> Security Engineer</option>
+                            <option value="Social Media Manager"> Social Media Manager</option>
+                            <option value="Software Engineer"> Software Engineer</option>
+                            <option value="Speech Language Pathologist"> Speech Language Pathologist</option>
+                            <option value="Strategy Manager"> Strategy Manager</option>
+                            <option value="Substitute Teacher"> Substitute Teacher</option>
+                            <option value="Teaching Assistant"> Teaching Assistant</option>
+                            <option value="Tutor"> Tutor</option>
+                            <option value="Web Developer"> Web Developer</option>
                         </select>
                         <br><br><br><br>
             
                     
                     <h4> Work Experience * </h4>
-                    <textarea name="message" rows="20" cols="100" required></textarea> <br>
+                    <textarea name="message" id= "work" rows="20" cols="100" placeholder= "Write a brief summary of your work experience (where you have worked, for how long, etc.)" required></textarea> <br>
                     
-                    <input type="submit" value="Sign Up">  
+                    <input type="submit" value="Create Your Account">  
             
                     </form>
                           
-
-
+                    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+                    <script>  
+                    var firebaseConfig = {
+                        apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
+                        authDomain: "middleman-56862.firebaseapp.com",
+                        databaseURL: "https://middleman-56862.firebaseio.com",
+                        projectId: "middleman-56862",
+                        storageBucket: "middleman-56862.appspot.com",
+                        messagingSenderId: "814613593392",
+                        appId: "1:814613593392:web:9762d421b305e2b0"
+                      };
+                      
+                      firebase.initializeApp(firebaseConfig);
+                      var db = firebase.firestore(); 
+                      </script>
+      
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+   
         <script src="setupmentor.js"></script>
     </body>
 </html>
