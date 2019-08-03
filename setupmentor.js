@@ -16,10 +16,15 @@ window.onclick = function(event) {
 }
 
 
-signmentor.addEventListener('submit', (e) => {
+
+signmentor.addEventListener('submit', (e) => {  
     e.preventDefault();
     const emailz= document.getElementById("emailz").value;
     const passwordz= document.getElementById("passwordz").value;
+   /* const passwordz1= document.getElementById("passwordz1").value;
+    if (passwordz!=passwordz1) {
+      alert("Please reenter password");
+     } */
    
     var name= document.getElementById("name").value;
     var address1= document.getElementById("address1").value;
@@ -36,7 +41,6 @@ signmentor.addEventListener('submit', (e) => {
     const auth1= firebase.auth();
     auth1.createUserWithEmailAndPassword(emailz, passwordz).then(cred1 => {
       return db.collection ("mentorUsers").doc(cred1.user.uid).set({
-
         name: name,
          email: emailz,
          address1: address1,
@@ -49,33 +53,35 @@ signmentor.addEventListener('submit', (e) => {
          educationLevel: education,
          currentProfession: cprofession,
          workExperience: work
-});
-});
-});
+}) 
+})
+.catch(function(error) {
+  var errorMessage = error.message;
+  alert(errorMessage)
+})
 
-
+});
 
 /*
 
-saveItemToDatabase(name, emailz, address1, address2, city, state, zip, phone, age, education, cprofession, work);
+window.location.href = "index.html"
 
- function saveItemToDatabase(name, emailz, address1, address2, city, state, zip, phone, age, education, cprofession, work){
-        doc= db.collection("mentorUsers").add({
-         name: name,
-         email: emailz, 
-         address1: address1,
-         address2: address2,
-         city: city,
-         state: state,
-         zipCode: zip,
-         phoneNumber: phone,
-         age: age,
-         educationLevel: education,
-         currentPofession: cprofession,
-         workExperience: work
-        })
-      }
 
+const setupUI = (user) => {
+  if (user) {
+    db.collection(mentor/menteeUsers).doc(user.uid).get.then(doc => {
+      const html = `<div> Logged in as ${mentor/menteeUsers.____} </div>
+      <div>${doc.data().____} </div>
+    })
+  }
+})
+
+    const auth = firebase.auth();
+    const check2 = auth.createUserWithEmailAndPassword(emailz, passwordz);
+    check2.catch(e => alert(e.message));
+
+  } 
+  
       firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
           console.log(firebaseUser); 
@@ -86,14 +92,6 @@ saveItemToDatabase(name, emailz, address1, address2, city, state, zip, phone, ag
         //  btnLogout.classList.add("hide")
         }
         })
-
-
-         /* if (passwordz!=passwordz1) {
-    alert("Please reenter password")
-
-
-    const auth = firebase.auth();
-    const check2 = auth.createUserWithEmailAndPassword(emailz, passwordz);
-    check2.catch(e => alert(e.message));
-
-  } */
+  
+  
+  */
