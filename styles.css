@@ -99,3 +99,9 @@ a {
     width: 25%;
     text-align: center;
  }
+
+ #topText {
+   text-align: center;
+   text-decoration: none;
+   color: blue;
+ }
