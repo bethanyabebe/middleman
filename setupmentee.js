@@ -16,7 +16,7 @@ window.onclick = function(event) {
 }
 
 
-//const signupForm = document.querySelector('#signmentee');
+
 signmentee.addEventListener('submit', (e) => {
     e.preventDefault();
     const emailz1= document.getElementById("emailz1").value;
@@ -33,6 +33,10 @@ signmentee.addEventListener('submit', (e) => {
     var education1= document.getElementById("education1").value;
     var cprofession1= document.getElementById("cprofession1").value; 
     var iprofession= document.getElementById("iprofession1").value; 
+
+    var reasoning= document.getElementById("reasoning").value; 
+    var qualities= document.getElementById("qualities").value; 
+    var outcome= document.getElementById("outcome").value; 
     var work1= document.getElementById("work1").value;
 
     const auth = firebase.auth();
@@ -50,12 +54,16 @@ signmentee.addEventListener('submit', (e) => {
          educationLevel: education1,
          currentProfession: cprofession1,
          interestedProfession: iprofession,
-         workExperience: work1
-   
+         reasoning: reasoning,
+         qualities: qualities,
+         workExperience: work1,
+         outcome: outcome
       })
     })
+    .then(function(firebaseUser) {
+      window.location.href = "index.html"
+    })
     .catch(function(error) {
-      var errorMessage = error.message;
-      alert(errorMessage)
+      alert(error)
     })
   });
