@@ -6,12 +6,12 @@
     </head>
     <body>
             <div class="header">
-                     <h1> <a href= "index.html"> MiddleMan </a> </h1>   
+                <h1> <a href= "index.html"> MiddleMan </a> </h1>   
                     <div class="dropdown">
                  <div class="dropdown">
                   <button onclick="myMenu()" class="button">Menu</button>
                   <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                     <a href="#">About</a>
                     <a href="#">Testimontials</a>
                   </div>
@@ -19,22 +19,28 @@
                 </div>
                 </div>
 
-                <br>  <br>  <br>  <br>
-        <h4> before you start looking for mentors, please provide us with more information </h4>
+                <br>  <br> 
+        <h4 id= "topText"> before you start looking for mentors, please provide us with more information </h4>
+        <br><br>
         <form id= "signmentee">
-                <h5>Name </h5> 
+                <h4>Name </h4> 
                 <input type="text" id="name1" placeholder= "John Doe" required>
-                <h5>Email </h5> 
-                <input type="email" id="emailz1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder= "youremail@email.com" required >
-                <h5>Create Password</h5> 
-                <input type="password" id="passwordz2"  placeholder= "password123" required>
-                <h5>Reenter Password</h5> 
-                <input type="password" id="passwordz3"  placeholder= "password123" required>
                 <br>
+                <h4>Email </h4> 
+                <input type="email" id="emailz1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder= "youremail@email.com" required >
+                <br>
+                <h4>Create Password</h4> 
+                <input type="password" id="passwordz2"  placeholder= "password123" required>
+                <br>
+                <h4>Reenter Password</h4> 
+                <input type="password" id="passwordz3"  placeholder= "password123" required>
+                <br><br><br><br>
+
             <h4> Address </h4>
-            Address Line 1  * <input type= "text"  id= "address3" placeholder= "1234 Home Drive" required> <br> <br>
-            Address Line 2 <input type= "text" id= "address4" placeholder= "1234 Home Drive"> <br> <br>
-            City/Town  * <input type= "text" id= "city2" placeholder= "City"> <br> <br>
+        
+            Address Line 1  * <input type= "text"  id= "address3" placeholder= "1234 Home Drive" required> <br><br>
+            Address Line 2 <input type= "text" id= "address4" placeholder= "1234 Home Drive"> <br><br>
+            City/Town  * <input type= "text" id= "city2" placeholder= "City"> <br><br>
             State  *
             <select id= "state1" required>
                     <option value="">Select State</option>
@@ -90,7 +96,9 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select> &nbsp; &nbsp; &nbsp; 
-            Zip Code * <input type= "text" id= "zip1" placeholder= "#####" pattern= "[0-9]{5}"required> <br><br><br><br>
+            Zip Code * <input type= "text" id= "zip1" placeholder= "#####" pattern= "[0-9]{5}"required> 
+            <br><br><br><br>
+
         <h4> Phone Number * </h4>
             <input type= "tel" id="phone1" name= "phone" placeholder= "###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             <br><br><br><br>
@@ -285,10 +293,20 @@
                         </select>
                         <br><br><br><br>
 
+        <h3> Short Answer Responses </h3>
         
-        <h4> Work Experience * </h4>
-        <textarea name="message" id= "work1" rows="20" cols="100" placeholder= "Write a brief summary of your work experience (where you have worked, for how long, etc.)" required></textarea> <br>
-        
+        <h4> In 3-5 sentences, explain why you are interested in making a career change. *</h4>
+        <textarea name="message" id= "reasoning" rows="20" cols="100" required></textarea> <br>
+        <br>
+        <h4> In your opinion, what are qualities of a good mentor? *</h4>
+        <textarea name="message" id= "qualities" rows="20" cols="100" required></textarea> <br> 
+        <br>
+        <h4> Write a brief summary of your work experience (where you have worked, for how long, etc.) * </h4>
+        <textarea name="message" id= "work1" rows="20" cols="100" required></textarea> <br>
+        <br>
+        <h4> What are you looking to get out of this mentorship? What are some of your long-term goals? *</h4>
+        <textarea name="message" id= "outcome" rows="20" cols="100" required></textarea> <br> 
+        <br>
         <input type="submit" value="Create Your Account">  
 
         </form>
