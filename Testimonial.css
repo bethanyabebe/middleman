@@ -78,6 +78,7 @@
     font-size: 75px;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
+    margin:10px;
 }
 .header {
     border-bottom: solid;
@@ -89,11 +90,28 @@
 #login {
     position: absolute;
     left: 85%;
-    top: 63px;
+    top: 1%;
     color:#0074e1;
     font-size: 30px;
     cursor: pointer
+
 }
+
+/* Dropdown Button */
+.button {
+    background-color: #0074e1;
+    color: white;
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+      width: 120px;
+    border: none;
+    border-radius: 16px;
+    cursor:pointer;
+    position: relative;
+    top: -85px;
+    left: 50%;
+  }
 
 /* Dropdown Button */
 .button {
