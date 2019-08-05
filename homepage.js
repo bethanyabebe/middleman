@@ -17,3 +17,19 @@ window.onclick = function(event) {
     }
   }
 }
+
+btnLogout.addEventListener("click", e=> {
+ firebase.auth().signOut();
+ })
+
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+       if (firebaseUser) {
+           console.log(firebaseUser); 
+           btnLogout.classList.remove("hide")
+           login1.classList.add("hide")
+              }
+              else {
+           console.log('not logged in')
+           btnLogout.classList.add("hide")
+              }
+              })
