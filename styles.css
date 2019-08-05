@@ -11,6 +11,11 @@
     margin: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: #0074e1;
+}
+
  #login1 {
      position: absolute;
      left: 85%;
