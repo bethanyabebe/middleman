@@ -19,9 +19,16 @@ window.onclick = function(event) {
 
 signmentor.addEventListener('submit', (e) => {  
     e.preventDefault();
-    const emailz= document.getElementById("emailz1").value;
-    const passwordz= document.getElementById("passwordz2").value;
+    
+    const passwordz2= document.getElementById("passwordz2").value;
+    const passwordz3= document.getElementById("passwordz3").value;
    
+    if(passwordz3!=passwordz2) {
+      alert("Passwords do not match.");
+    }
+    else{
+
+    const emailz= document.getElementById("emailz1").value;
     var name= document.getElementById("name1").value;
     var address1= document.getElementById("address3").value;
     var address2= document.getElementById("address4").value;
@@ -33,7 +40,7 @@ signmentor.addEventListener('submit', (e) => {
     var education= document.getElementById("education1").value;
     var cprofession= document.getElementById("cprofession1").value; 
 
-
+    var bio= document.getElementById("bio").value
     var strengthWeaknesses = document.getElementById("strengthWeaknesses").value; 
     var motivation = document.getElementById("motivation").value; 
     var work= document.getElementById("work").value;
@@ -53,6 +60,7 @@ signmentor.addEventListener('submit', (e) => {
          age: age,
          educationLevel: education,
          currentProfession: cprofession,
+         bio: bio,
          strengthWeaknesses: strengthWeaknesses,
          motivation: motivation,
          workExperience: work,
@@ -65,6 +73,5 @@ signmentor.addEventListener('submit', (e) => {
 .catch(function(error) {
   alert(error)
 })
-
+}
 });
-
