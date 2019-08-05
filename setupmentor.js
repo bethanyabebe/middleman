@@ -47,7 +47,7 @@ signmentor.addEventListener('submit', (e) => {
     var experience = document.getElementById("experience").value; 
 
     const auth1= firebase.auth();
-    auth1.createUserWithEmailAndPassword(emailz, passwordz).then(cred1 => {
+    auth1.createUserWithEmailAndPassword(emailz, passwordz2).then(cred1 => {
       return db.collection ("mentorUsers").doc(cred1.user.uid).set({
         name: name,
          email: emailz,
@@ -75,3 +75,4 @@ signmentor.addEventListener('submit', (e) => {
 })
 }
 });
+
