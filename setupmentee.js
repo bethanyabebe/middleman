@@ -49,7 +49,7 @@ signmentee.addEventListener('submit', (e) => {
     var work1= document.getElementById("work1").value;
 
     const auth = firebase.auth();
-    auth.createUserWithEmailAndPassword(emailz1, passwordz2).then(cred => {
+    auth.createUserWithEmailAndPassword(emailz1, passwordz).then(cred => {
       return db.collection ("menteeUsers").doc(cred.user.uid).set({
          name: name1,
          email: emailz1,
