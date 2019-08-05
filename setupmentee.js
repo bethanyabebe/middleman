@@ -19,8 +19,16 @@ window.onclick = function(event) {
 
 signmentee.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    const passwordz= document.getElementById("passwordz").value;
+    const passwordz1= document.getElementById("passwordz1").value;
+
+    if(passwordz1!=passwordz) {
+      alert("Passwords do not match.");
+    }
+
+    else {
     const emailz1= document.getElementById("emailz1").value;
-    const passwordz2= document.getElementById("passwordz2").value;
 
     var name1 = document.getElementById("name1").value
     var address3= document.getElementById("address3").value;
@@ -34,6 +42,7 @@ signmentee.addEventListener('submit', (e) => {
     var cprofession1= document.getElementById("cprofession1").value; 
     var iprofession= document.getElementById("iprofession1").value; 
 
+    var bio= document.getElementById("bio").value
     var reasoning= document.getElementById("reasoning").value; 
     var qualities= document.getElementById("qualities").value; 
     var outcome= document.getElementById("outcome").value; 
@@ -54,6 +63,7 @@ signmentee.addEventListener('submit', (e) => {
          educationLevel: education1,
          currentProfession: cprofession1,
          interestedProfession: iprofession,
+         bio: bio,
          reasoning: reasoning,
          qualities: qualities,
          workExperience: work1,
@@ -66,4 +76,7 @@ signmentee.addEventListener('submit', (e) => {
     .catch(function(error) {
       alert(error)
     })
+  }
   });
+
+  
