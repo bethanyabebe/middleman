@@ -210,6 +210,81 @@ a {
    color: blue;
  }
 
+#titlestatement{
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	color:#0074e1;
+	margin:5px,0px,5px,0px;
+}
+
+#mission{
+	display:block;
+	padding:10px;
+	width:50%;
+	position: relative;
+	background-color: white;
+	margin:0px;
+	margin-top:30px;
+	left:25%;
+	border-color:black;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 40px;
+	font-family: 'Courgette', cursive;
+	color: #3d3d3d;
+	font-size: 24px;
+}
+#testimonialbox{
+	position: relative;
+	top:50px;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 40px;
+	width: 50%;
+	left:25%;
+	padding:10px;
+	margin-bottom: 20px
+}
+#testimonialtext{
+	color: #3d3d3d;
+	font-size: 24px;
+	text-align: center;
+	position: relative;
+	font-family: 'Courgette', cursive;
+	vertical-align: center;
+}
+.animation{
+	animation-name: testimonial;
+	animation-duration: 1.2s;
+	animation-play-state: running;
+}
+@keyframes testimonial{
+	0% {left:0px; opacity: 1;}
+	50%{left:100px; opacity: 0}
+	100%{left:200px; opacity: 0}
+}
+.testimonialbutton{
+	background-color: #a8a8a8;
+    color: white;
+    padding: 4px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    width: 16%;
+    height: 24px;
+    border: none;
+    border-radius: 16px;
+    cursor:pointer;
+    position: relative;
+    transition-duration: 0.4s;
+    margin-left: 42%;
+    margin-right: 42%;
+    top:10px;
+}
+.testimonialbutton:hover {
+	background-color: #787878;
+	transform: scale(1.1,1.1);
+ }
+
 /* styling logout button
 #btnLogout {
 float: right;
