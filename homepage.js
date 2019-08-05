@@ -17,11 +17,13 @@ window.onclick = function(event) {
     }
   }
 }
-
+/* allows for logout function
 btnLogout.addEventListener("click", e=> {
  firebase.auth().signOut();
  })
+*/
 
+/* hides/removes logout and login button
     firebase.auth().onAuthStateChanged(firebaseUser => {
        if (firebaseUser) {
            console.log(firebaseUser); 
@@ -33,3 +35,4 @@ btnLogout.addEventListener("click", e=> {
            btnLogout.classList.add("hide")
               }
               })
+    */
