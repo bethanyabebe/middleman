@@ -2,13 +2,12 @@
 <html>
     <head>
         <title>Welcome To MiddleMan!</title>
-        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <!-- Header start line below-->
     <div class="header">
-        <h1>MiddleMan</h1> <h2 id="login1"> <a href = "login.html"> Log In/Sign Up </a></h2>  
+    <h1>MiddleMan</h1> <h2 id="login1">Log In/Sign Up</h2>  
     <div class="dropdown">
  <div class="dropdown">
   <button onclick="myMenu()" class="button">Menu</button>
@@ -19,15 +18,57 @@
   </div>
 </div>
 </div>
- </div> <!-- Header ends here-->
+ </div>
  <div class="searchbox">
-    <input type="text" class="search-field careers" placeholder="Search For Mentors">&nbsp;&nbsp; &nbsp; &nbsp; 
-    <button class="search-btn" type="button">Search!</button>  
+   <!-- <input type="text" id="search-field" placeholder="Search For Mentors">&nbsp;&nbsp; &nbsp; &nbsp;-->
+     <a href = "searchResults.html"><button class="search-btn" type="button">Search!</button></a> 
 </div>
-<footer>
+<select id="new">
+    <option value=""> Search Through Our Careers </option>
+     <option value="Account Manager"> Account Manager </option>
+     <option value="Administrative Assistant"> Administrative Assistant</option>
+     <option value="Case Manager"> Case Manager</option>
+     <option value="Construction Manager"> Construction Manager</option>
+     <option value="Customer Service Representative"> Customer Service Representative</option>
+     <option value="Data Analyst"> Data Analyst</option>
+     <option value="Data Engineer"> Data Engineer</option>
+     <option value="Data Scientist"> Data Scientist</option>
+     <option value="Devops Engineer"> Devops Engineer</option>
+     <option value="Engineer"> Engineer</option>
+     <option value="Financial Analyst"> Financial Analyst</option>
+     <option value="HR Manager"> HR Manager</option>
+     <option value="Intern"> Intern</option>
+     <option value="Lab Technician"> Lab Technician</option>
+     <option value="Marketing Coordinator"> Marketing Coordinator</option>
+     <option value="Marketing Manager"> Marketing Manager</option>
+     <option value="Mechanical Engineer"> Mechanical Engineer</option>
+     <option value="Nursing Manager"> Nursing Manager</option>
+     <option value="Occupational Therapist"> Occupational Therapist</option>
+     <option value="Operations Manager"> Operations Manager</option>
+     <option value="Pharmacy Technician"> Pharmacy Technician</option>
+     <option value="Physical Assistant"> Physical Assistant</option>
+     <option value="Product Manager"> Product Manager</option>
+     <option value="Professor"> Professor</option>
+     <option value="Program Manager"> Program Manager</option>
+     <option value="Project Manager"> Project Manager</option>
+     <option value="Research Assistant"> Research Assistant</option>
+     <option value="Sales Associate"> Sales Associate</option>
+     <option value="Sales Engineer"> Sales Engineer</option>
+     <option value="Sales Manager"> Sales Manager</option>
+     <option value="Security Engineer"> Security Engineer</option>
+     <option value="Social Media Manager"> Social Media Manager</option>
+     <option value="Software Engineer"> Software Engineer</option>
+     <option value="Speech Language Pathologist"> Speech Language Pathologist</option>
+     <option value="Strategy Manager"> Strategy Manager</option>
+     <option value="Substitute Teacher"> Substitute Teacher</option>
+     <option value="Teaching Assistant"> Teaching Assistant</option>
+     <option value="Tutor"> Tutor</option>
+     <option value="Web Developer"> Web Developer</option>
+  </select>
+<!--<footer>
   <p>MiddleMan</p>
   <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
-</footer>
+</footer>-->
     <script
           src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
