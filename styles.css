@@ -19,7 +19,7 @@ a {
 }
 
  #login1 {
-    position: absolute;
+    position: relative;
     left: 85%;
     top: 1%;
     color:#0074e1;
