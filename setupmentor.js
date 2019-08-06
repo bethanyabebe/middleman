@@ -19,6 +19,7 @@ window.onclick = function(event) {
 
 signmentor.addEventListener('submit', (e) => {  
     e.preventDefault();
+    checkPass2();
     
     const passwordz2= document.getElementById("passwordz2").value;
     const passwordz3= document.getElementById("passwordz3").value;
@@ -76,3 +77,23 @@ signmentor.addEventListener('submit', (e) => {
 }
 });
 
+
+function checkPass2() {
+  var passwordz2= document.getElementById("passwordz2").value;
+  var passwordz3= document.getElementById("passwordz3").value;
+  var message = document.getElementById("confirm-message2");
+
+  var good_color = "#66cc66";
+  var bad_color  = "#ff6666";
+
+  if(passwordz2 == passwordz3) {
+    document.getElementById("passwordz3").style.backgroundColor= good_color;
+    document.getElementById("confirm-message2").style.color = good_color;
+    message.innerHTML= "Passwords Match!";
+    }
+  else{
+    document.getElementById("passwordz3").style.backgroundColor = bad_color;
+   document.getElementById("confirm-message2").style.color = bad_color;
+    message.innerHTML= "Passwords Do Not Match!";
+  }
+}
