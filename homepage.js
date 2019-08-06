@@ -59,31 +59,3 @@ btnLogout.addEventListener('click', e => {
            log.classList.remove('hide')
               }
               })
-
-
-        console.log("456")
-        open.classList.remove('show2');
-      }
-    }
-  }
-}
-
-/* allows for logout function
-btnLogout.addEventListener("click", e=> {
- firebase.auth().signOut();
- })
-*/
-
-/* hides/removes logout and login button
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-       if (firebaseUser) {
-           console.log(firebaseUser); 
-           btnLogout.classList.remove("hide")
-           login1.classList.add("hide")
-              }
-              else {
-           console.log('not logged in')
-           btnLogout.classList.add("hide")
-              }
-              })
-    */
