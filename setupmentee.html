@@ -2,12 +2,11 @@
 <html>
     <head>
             <title>Create Your Account</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
             <div class="header">
-                <h1 class="header"> <a href= "index.html"> MiddleMan </a> </h1>   
+                <h1> <a href= "index.html"> MiddleMan </a> </h1>   
                     <div class="dropdown">
                  <div class="dropdown">
                   <button onclick="myMenu()" class="button">Menu</button>
@@ -31,10 +30,11 @@
                 <input type="email" id="emailz1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder= "youremail@email.com" required >
                 <br>
                 <h4>Create Password</h4> 
-                <input type="password" id="passwordz"  placeholder= "password123" required>
+                <input type="password" id="passwordz"  placeholder= "password123" onkeyup= "checkPass()" required>
                 <br>
                 <h4>Reenter Password</h4> 
-                <input type="password" id="passwordz1"  placeholder= "password123" required>
+                <input type="password" id="passwordz1"  placeholder= "password123" onkeyup= "checkPass()" required>
+                <span id= "confirm-message" class= "confirm-message"></span> 
                 <br><br><br><br>
 
             <h4> Address </h4>
