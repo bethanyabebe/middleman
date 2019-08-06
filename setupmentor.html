@@ -2,7 +2,6 @@
 <html>
     <head>
             <title>Create Your Account</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
@@ -31,10 +30,11 @@
                 <input type="email" id="emailz1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder= "youremail@email.com" required >
                 <br>
                 <h4>Create Password</h4> 
-                <input type="password" id="passwordz2"  placeholder= "password123" required>
+                <input type="password" id="passwordz2"  placeholder= "password123" onkeyup= "checkPass2()" required>
                 <br>
                 <h4>Reenter Password</h4> 
-                <input type="password" id="passwordz3"  placeholder= "password123" required>
+                <input type="password" id="passwordz3"  placeholder= "password123" onkeyup= "checkPass2()" required>
+                <span id= "confirm-message2" class= "confirm-message2"></span> 
                 <br><br><br><br>
 
             <h4> Address </h4>
