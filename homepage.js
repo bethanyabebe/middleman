@@ -1,39 +1,66 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myMenu() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById('myDropdown').classList.toggle('show')
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
+$('#button').click(function(event) {
   if (!event.target.matches('.button')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    var dropdowns = document.getElementsByClassName('dropdown-content')
+    var i
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      var openDropdown = dropdowns[i]
       if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+        openDropdown.classList.remove('show')
       }
     }
   }
-}
+});
+
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function logout() {
-  document.getElementById("myDropdown2").classList.toggle("show2");
+function myFunction() {
+  document.getElementById('myDropdown2').classList.toggle('show2')
+  console.log('hi1')
 }
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(events) {
-  console.log("jp");
-  if (!events.target.matches('.button2')) {
-    console.log("hekko");
-    var dropdownz = document.getElementsByClassName("dropdown2-content");
-    var j;
+$('#button2').click(function(event2) {
+  if (!event2.target.matches('.button2')) {
+    var dropdownz = document.getElementsByClassName('dropdown2-content')
+    var j
     for (j = 0; j < dropdownz.length; j++) {
-      var open = dropdownz[j];
+      var open = dropdownz[j]
       if (open.classList.contains('show2')) {
+        open.classList.remove('show2')
+      }
+    }
+  }
+});
+
+
+const btnLogout = document.getElementById('btnLogout');
+const dropdown2 = document.getElementById('dropdown2');
+const log = document.getElementById('log');
+
+
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut();
+    }); 
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+       if (firebaseUser) {
+           console.log(firebaseUser); 
+           dropdown2.classList.remove('hide')
+           log.classList.add('hide')
+              }
+              else {
+           console.log('not logged in')
+           dropdown2.classList.add('hide')
+           log.classList.remove('hide')
+              }
+              })
+
+
         console.log("456")
         open.classList.remove('show2');
       }
