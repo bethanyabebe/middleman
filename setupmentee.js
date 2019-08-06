@@ -19,17 +19,15 @@ window.onclick = function(event) {
 
 signmentee.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const passwordz= document.getElementById("passwordz").value;
-    const passwordz1= document.getElementById("passwordz1").value;
+    checkPass();  
+    const emailz1= document.getElementById("emailz1").value;
+    var passwordz= document.getElementById("passwordz").value;
+    var passwordz1= document.getElementById("passwordz1").value;
 
     if(passwordz1!=passwordz) {
       alert("Passwords do not match.");
     }
-
-    else {
-    const emailz1= document.getElementById("emailz1").value;
-
+    else{
     var name1 = document.getElementById("name1").value
     var address3= document.getElementById("address3").value;
     var address4= document.getElementById("address4").value;
@@ -79,4 +77,23 @@ signmentee.addEventListener('submit', (e) => {
   }
   });
 
-  
+  function checkPass() {
+    var passwordz= document.getElementById("passwordz").value;
+    var passwordz1= document.getElementById("passwordz1").value;
+    var message = document.getElementById("confirm-message")
+
+    var good_color = "#66cc66";
+    var bad_color  = "#ff6666";
+
+    if(passwordz == passwordz1) {
+      document.getElementById("passwordz1").style.backgroundColor= good_color;
+      document.getElementById("confirm-message").style.color = good_color;
+      message.innerHTML= "Passwords Match!";
+      }
+    else{
+      document.getElementById("passwordz1").style.backgroundColor = bad_color;
+     document.getElementById("confirm-message").style.color = bad_color;
+      message.innerHTML= "Passwords Do Not Match!";
+    }
+  }
+
