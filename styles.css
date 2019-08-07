@@ -681,14 +681,12 @@ select.login {
   padding: 10px;
   font-family: 'Cabin', sans-serif;
   font-size: 30px;
-  width: 120px;
+  width: 100px;
   border: none;
   border-radius: 16px;
   cursor:pointer;
   position: relative;
-  left: 90%;
   z-index:10;
-  top: -150px;
 }
 
 /* Dropdown button on hover & focus */
@@ -698,8 +696,10 @@ background-color: #2980B9;
 }
 
 .dropdown2 {
-  position: absolute;
+  position: relative;
   display: inline-block;
+  top: -125px;
+  left:1075%;
   }
   
   /* Dropdown Content (Hidden by Default) */
