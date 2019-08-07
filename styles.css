@@ -3,7 +3,7 @@ body{
     font-family: 'Cabin', sans-serif;
 }
 
-/* The header and footer for all the pages */
+/* The header for all the pages */
 
 .header h1 {
     color:#0074e1;
@@ -12,7 +12,7 @@ body{
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     position: absolute;
-    top:-7%;
+    top:100px;
 }
 
 .header {
@@ -22,7 +22,6 @@ body{
     margin: 0px;
     width: 100%;
 }
-
 h1#header2  {
     color:#0074e1;
     text-align: center;
@@ -36,37 +35,16 @@ h1#header2  {
     margin-bottom: 0px;
 }
 
+#log{
+    float: right;
+    font-size: 30px;
+    top: 50%;
+}
+
 a {
   text-decoration: none;
   color: #3498DB;
   text-align: center;
-}
-
-footer{
-  background-color:#b0c4d6;
-  height:10%;
-  bottom: 0px;
-  position: fixed;
-  width: 100%;
-  margin: 0px;
-  left:0px;
-  padding:7px;
-  opacity: 0.87
-}
-#footer{
-  text-align: center;
-}
-
-img#icon{
-  border-radius: 100%;
-  height: 50px;
-  margin-top: 15px;
-  margin-left:50px;
-  margin-right:50px;
-}
-
-a#footerimage{
-
 }
 
 @media screen and (max-width: 800px) {
@@ -90,12 +68,6 @@ a#footerimage{
     font-size: 30px;
     cursor: pointer
 }
-
-#log{
-    float: right;
-    font-size: 30px;
-    top: 50%;
-}
 /* ================================================ */
 
 /* Buttons and Dropdown Menus */
@@ -112,6 +84,7 @@ a#footerimage{
     cursor:pointer;
     position: relative;
     top: -75px;
+    left: 50%;
     margin-right:50%
     /* Dropdown Button */
   }
@@ -422,12 +395,6 @@ select.login {
 
 /* ================================================ */
 
-/* styling logout button
-#btnLogout {
-float: right;
-color: black;
-} */
-
 /* Profile Page */
 
 .account {
@@ -678,3 +645,61 @@ color: black;
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
 }
+
+/* Account button (only shows when user is logged in) */
+
+
+#profile {
+  padding: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 16px;
+  cursor:pointer;
+  position: relative;
+  left: 1170px;
+  z-index:10;
+  top: -100px;
+}
+
+/* Dropdown button on hover & focus */
+.button2:hover, .dropbtn:focus {
+background-color: #2980B9;
+  
+}
+
+.dropdown2 {
+  position: absolute;
+  display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+ .dropdown2-content {
+  display: none;
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  min-height: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left: 1100px;
+  z-index:10;
+  top: 0px;
+  } 
+  
+  /* Links inside the dropdown */
+ .dropdown2-content a {
+  color: black;
+  padding: 25px 25px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  } 
+  
+  /* Change color of dropdown links on hover */
+  .dropdown2-content a:hover {background-color: darkorange}
+  
+  /* Show the dropdown menu */
+  .show2 {display:block;} 
