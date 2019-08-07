@@ -374,9 +374,11 @@ select.login {
 	border-width: 3px;
 	border-style: solid;
 	border-radius: 40px;
-	font-family: 'Courgette', cursive;
+	border-color:#0074e1;
+	font-family: 'Red Hat Display', sans-serif;
 	color: #3d3d3d;
 	font-size: 24px;
+	opacity: 0.7;
 }
 #testimonialbox{
 	position: relative;
