@@ -38,6 +38,7 @@ h1#header2  {
 #log{
     float: right;
     font-size: 20px;
+    top: -7%;
 }
 
 a {
