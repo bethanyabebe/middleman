@@ -20,12 +20,11 @@ $('#button').click(function(event) {
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById('myDropdown2').classList.toggle('show2')
-  console.log('hi1')
 }
 
 // Close the dropdown menu if the user clicks outside of it
-$('#profile').click(function(event2) {
-  if (!event2.target.matches('.profile')) {
+$('#button2').click(function(event2) {
+  if (!event2.target.matches('.button2')) {
     var dropdownz = document.getElementsByClassName('dropdown2-content')
     var j
     for (j = 0; j < dropdownz.length; j++) {
@@ -59,4 +58,3 @@ btnLogout.addEventListener('click', e => {
            profile.style.display= 'none';
                   }
               })
-
