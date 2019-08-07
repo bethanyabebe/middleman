@@ -1,3 +1,8 @@
+body{ 
+    background: white;
+    font-family: 'Cabin', sans-serif;
+}
+
 /* The header for all the pages */
 
 .header h1 {
