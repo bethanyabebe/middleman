@@ -39,7 +39,7 @@ $('#button2').click(function(event2) {
 
 const btnLogout = document.getElementById('btnLogout');
 var profile = document.getElementById('profile');
-var log = document.getElementById('log');
+var log = document.getElementById('login1');
 
 
 btnLogout.addEventListener('click', e => {
