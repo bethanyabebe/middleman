@@ -181,52 +181,6 @@ background-color: #2980B9;
   .show2 {display:block;} 
 
 /* ================================================ */
-
-      /*Search Results*/
-#new {
-    display: flex;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    /*width: 400px;*/
-    height: 75px;
-    /*width: 900px; */
-    padding:10px;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    background-color: gainsboro;
-    color: darkorange;
-    margin-top: 15%;
-    font-size:25px;
-    float: left;
-    margin: 0 1.5%;
-    width: 63%;
-}
-
-.search-btn {
-    height: 50px;
-    background:#FF8C00;
-    border: none;
-    color:white;
-    width: 15%;
-    border-radius: 25%;
-    margin-top: 60px;
-   position:static;
-    font-size: 25px;
-    float: right;
-    margin: 0;
-    top:30%;  
-    
-}
-
-
-.search-btn:hover {
-    background: #ffc107;
-    cursor: pointer;
-} 
- 
-/* ========================== */
  
 /* Login Page */
 
@@ -267,7 +221,7 @@ background-color: #2980B9;
 
 /* ================================================ */
 
-/* Homepage */
+/* Homepage */ /*Search Results*/
 
 #new {
     display: flex;
