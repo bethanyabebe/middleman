@@ -181,8 +181,8 @@ background-color: #2980B9;
   .show2 {display:block;} 
 
 /* ================================================ */
- /* ============================================== */
-      /*Search for search result*/
+
+      /*Search Results*/
 #new {
     display: flex;
     background-position: center;
@@ -215,7 +215,7 @@ background-color: #2980B9;
    position:static;
     font-size: 25px;
     float: right;
-    margin: 0
+    margin: 0;
     top:30%;  
     
 }
