@@ -3,7 +3,7 @@ body{
     font-family: 'Cabin', sans-serif;
 }
 
-/* The header for all the pages */
+/* The header and footer for all the pages */
 
 .header h1 {
     color:#0074e1;
@@ -12,7 +12,7 @@ body{
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     position: absolute;
-    top:100px;
+    top:-7%;
 }
 
 .header {
@@ -22,6 +22,7 @@ body{
     margin: 0px;
     width: 100%;
 }
+
 h1#header2  {
     color:#0074e1;
     text-align: center;
@@ -35,16 +36,37 @@ h1#header2  {
     margin-bottom: 0px;
 }
 
-#log{
-    float: right;
-    font-size: 30px;
-    top: 50%;
-}
-
 a {
   text-decoration: none;
   color: #3498DB;
   text-align: center;
+}
+
+footer{
+  background-color:#b0c4d6;
+  height:10%;
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  margin: 0px;
+  left:0px;
+  padding:7px;
+  opacity: 0.87
+}
+#footer{
+  text-align: center;
+}
+
+img#icon{
+  border-radius: 100%;
+  height: 50px;
+  margin-top: 15px;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+a#footerimage{
+
 }
 
 @media screen and (max-width: 800px) {
@@ -314,65 +336,65 @@ select.login {
 
 }
 #titlestatement{
-	text-align: center;
-	font-family: 'Cabin', sans-serif;
-	color:#0074e1;
-	margin:5px,0px,5px,0px;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  color:#0074e1;
+  margin:5px,0px,5px,0px;
 }
 
 #mission{
-	display:block;
-	padding:10px;
-	width:50%;
-	position: relative;
-	background-color: white;
-	margin:0px;
-	margin-top:30px;
-	left:25%;
-	border-color:black;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 40px;
-	border-color:#0074e1;
-	font-family: 'Red Hat Display', sans-serif;
-	color: #3d3d3d;
-	font-size: 24px;
-	opacity: 0.7;
-	text-align: center;
+  display:block;
+  padding:10px;
+  width:50%;
+  position: relative;
+  background-color: white;
+  margin:0px;
+  margin-top:30px;
+  left:25%;
+  border-color:black;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 40px;
+  border-color:#0074e1;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #3d3d3d;
+  font-size: 24px;
+  opacity: 0.7;
+  text-align: center;
 }
 #testimonialbox{
-	position: relative;
-	top:50px;
-	border-width: 3px;
-	border-style: solid;
-	border-radius: 40px;
-	border-color:#0074e1;
-	width: 50%;
-	left:25%;
-	padding:10px;
-	margin-bottom: 20px;
-	opacity: 0.7;
+  position: relative;
+  top:50px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 40px;
+  border-color:#0074e1;
+  width: 50%;
+  left:25%;
+  padding:10px;
+  margin-bottom: 20px;
+  opacity: 0.7;
 }
 #testimonialtext{
-	color: #3d3d3d;
-	font-size: 24px;
-	text-align: center;
-	position: relative;
-	font-family: 'Red Hat Display', sans-serif;
-	vertical-align: center;
+  color: #3d3d3d;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+  font-family: 'Red Hat Display', sans-serif;
+  vertical-align: center;
 }
 .animation{
-	animation-name: testimonial;
-	animation-duration: 1.2s;
-	animation-play-state: running;
+  animation-name: testimonial;
+  animation-duration: 1.2s;
+  animation-play-state: running;
 }
 @keyframes testimonial{
-	0% {left:0px; opacity: 1;}
-	50%{left:100px; opacity: 0}
-	100%{left:200px; opacity: 0}
+  0% {left:0px; opacity: 1;}
+  50%{left:100px; opacity: 0}
+  100%{left:200px; opacity: 0}
 }
 .testimonialbutton{
-	background-color: #a8a8a8;
+  background-color: #a8a8a8;
     color: white;
     padding: 4px;
     font-family: 'Cabin', sans-serif;
@@ -389,11 +411,17 @@ select.login {
     top:10px;
 }
 .testimonialbutton:hover {
-	background-color: #787878;
-	transform: scale(1.1,1.1);
+  background-color: #787878;
+  transform: scale(1.1,1.1);
  }
 
 /* ================================================ */
+
+/* styling logout button
+#btnLogout {
+float: right;
+color: black;
+} */
 
 /* Profile Page */
 
@@ -645,61 +673,3 @@ select.login {
   animation-iteration-count: 1; 
   animation-fill-mode: forwards;
 }
-
-/* Account button (only shows when user is logged in) */
-
-
-#profile {
-  padding: 10px;
-  font-family: 'Cabin', sans-serif;
-  font-size: 30px;
-  width: 120px;
-  border: none;
-  border-radius: 16px;
-  cursor:pointer;
-  position: relative;
-  left: 1170px;
-  z-index:10;
-  top: -100px;
-}
-
-/* Dropdown button on hover & focus */
-.button2:hover, .dropbtn:focus {
-background-color: #2980B9;
-  
-}
-
-.dropdown2 {
-  position: absolute;
-  display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
- .dropdown2-content {
-  display: none;
-  text-align: right;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 200px;
-  min-height: 170px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 1100px;
-  z-index:10;
-  top: 0px;
-  } 
-  
-  /* Links inside the dropdown */
- .dropdown2-content a {
-  color: black;
-  padding: 25px 25px;
-  text-decoration: none;
-  display: block;
-  font-size: 30px;
-  } 
-  
-  /* Change color of dropdown links on hover */
-  .dropdown2-content a:hover {background-color: darkorange}
-  
-  /* Show the dropdown menu */
-  .show2 {display:block;} 
