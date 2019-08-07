@@ -39,8 +39,8 @@ $('#button2').click(function(event2) {
 
 
 const btnLogout = document.getElementById('btnLogout');
-const dropdown2 = document.getElementById('dropdown2');
-const log = document.getElementById('log');
+var profile = document.getElementById('profile');
+var log = document.getElementById('log');
 
 
 btnLogout.addEventListener('click', e => {
@@ -50,12 +50,13 @@ btnLogout.addEventListener('click', e => {
   firebase.auth().onAuthStateChanged(firebaseUser => {
        if (firebaseUser) {
            console.log(firebaseUser); 
-           dropdown2.classList.remove('hide')
-           log.classList.add('hide')
+           log.style.display= 'none';
+           profile.style.display= 'hidden';
               }
               else {
            console.log('not logged in')
-           dropdown2.classList.add('hide')
-           log.classList.remove('hide')
-              }
+           log.style.display= 'hidden';
+           profile.style.display= 'none';
+                  }
               })
+
