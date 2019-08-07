@@ -1,3 +1,7 @@
+body{ 
+    background: white;
+    font-family: 'Cabin', sans-serif;
+}
 .header h1 {
     color:#0074e1;
     text-align: center;
