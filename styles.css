@@ -13,6 +13,7 @@ body{
     font-family: 'Cabin', sans-serif;
     position: absolute;
     top:-7%;
+    width:50%;
 }
 
 .header {
