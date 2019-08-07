@@ -1,8 +1,23 @@
-body{ 
-    background: white;
-    font-family: 'Cabin', sans-serif;
-}
+/* The header for all the pages */
+
 .header h1 {
+    color:#0074e1;
+    text-align: center;
+    font-size: 75px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    top:-7%;
+}
+
+.header {
+    border-bottom: solid;
+    border-color: #fd6a02;
+    border-width: 15px;
+    margin: 0px;
+    width: 100%;
+}
+h1#header2  {
     color:#0074e1;
     text-align: center;
     font-size: 75px;
@@ -10,23 +25,21 @@ body{
     font-family: 'Cabin', sans-serif;
     margin-left:37.5%;
     margin-right:40%;
-    position: absolute;
-    top:-7%;
+    position: relative;
+    margin-top:0px;
+    margin-bottom: 0px;
 }
-.header3 h1 {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color:#0074e1;
-    text-align: center;
-    font-size: 75px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
+
+a {
+  text-decoration: none;
+  color: #3498DB;
+  text-align: center;
 }
-.header {
-    border-bottom: solid;
-    border-color: #fd6a02;
-    border-width: 15px;
-    margin: 0px;
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+        width: 100%;
+    }
 }
 
 .header3 {
@@ -36,26 +49,6 @@ body{
     margin: 0px;
 }
 
-a {
-  text-decoration: none;
-  color: #3498DB;
-}
-
- #login1 {
-    position: relative;
-    left: 85%;
-    top: 1%;
-    color:#0074e1;
-    font-size: 30px;
-    cursor: pointer
-}
-
-@media screen and (max-width: 800px) {
-    .left, .main, .right {
-        width: 100%;
-    }
-}
- /* Dropdown Button */
 #login2 {
     position: absolute;
     left: 90%;
@@ -64,6 +57,9 @@ a {
     font-size: 30px;
     cursor: pointer
 }
+/* ================================================ */
+
+/* Buttons and Dropdown Menus */
 
 .button {
     background-color: #0074e1;
@@ -71,29 +67,28 @@ a {
     padding: 10px;
     font-family: 'Cabin', sans-serif;
     font-size: 30px;
-    width: 120px;
+      width: 120px;
     border: none;
     border-radius: 16px;
     cursor:pointer;
-    position: absolute;
-    top: -85px;
-    left: 75px;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .button:hover, .dropbtn:focus {
-    background-color: #0074e1;
-    border-radius: 16px;
-      
+    position: relative;
+    top: -75px;
+    left: 50%;
+    margin-right:50%
+    /* Dropdown Button */
   }
 
-/* The container <div> - needed to position the dropdown content */
+.button:hover, .dropbtn:focus {
+  background-color: #2980B9;
+/* Dropdown button on hover & focus */    
+}
+
 .dropdown {
   position: absolute;
   display: inline-block;
+ /* The container <div> - needed to position the dropdown content */ 
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -101,35 +96,30 @@ a {
   min-width: 200px;
   min-height: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    left: 70px;
-    z-index:10;
-    top: -55px;
+  left: 70px;
+  z-index:10;
+  top: -55px;
+  /* Dropdown Content (Hidden by Default) */
 }
 
-.msgbutton {
-    background-color: #0074e1;
-    color: white;
-    padding: 16px;
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-    width: auto;
-    border: none;
-    border-radius: 0px;
-  }
-/* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 20px 20px;
-    text-decoration: none;
-    display: block;
-    font-size:  28px;
-  }
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color:#fd6a02}
-  
-  /* Show the dropdown menu */
-.show {display:block;}
+  color: black;
+  padding: 25px 25px;
+  text-decoration: none;
+  display: block;
+  font-size:  30px;
+  /* Links inside the dropdown */
+}
 
+.dropdown-content a:hover {
+  background-color: darkorange
+  /* Change color of dropdown links on hover */
+}
+
+.show {
+  display:block;
+  /* Show the dropdown menu */
+}
 
 .button2 {
   background-color: #0074e1;
@@ -147,10 +137,9 @@ a {
   top: -30px;
 }
 
-/* Dropdown button on hover & focus */
 .button2:hover, .dropbtn:focus {
 background-color: #2980B9;
-  
+/* Dropdown button on hover & focus */
 }
 
 .dropdown2 {
@@ -158,7 +147,6 @@ background-color: #2980B9;
   display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
  .dropdown2-content {
   display: none;
   position: absolute;
@@ -169,15 +157,16 @@ background-color: #2980B9;
     right: 70px;
     z-index:10;
     top: -30px;
+  /* Dropdown Content (Hidden by Default) */  
   } 
-  
-  /* Links inside the dropdown */
+ 
  .dropdown2-content a {
   color: black;
   padding: 25px 25px;
   text-decoration: none;
   display: block;
   font-size:  30px;
+   /* Links inside the dropdown */
   } 
   
   /* Change color of dropdown links on hover */
@@ -185,7 +174,49 @@ background-color: #2980B9;
   
   /* Show the dropdown menu */
   .show2 {display:block;} 
+
+/* ================================================ */
  
+/* Login Page */
+
+ #login1 {
+    position: relative;
+    left: 85%;
+    top: 1%;
+    color:#0074e1;
+    font-size: 30px;
+    cursor: pointer
+}
+
+.signupform {
+    float: left;
+    display: block; 
+    padding: 5px;
+    margin: 125px;
+    width: 25%;
+    text-align: center;
+ }
+
+ .loginform {
+    float: right;
+    display: block; 
+    padding: 5px;
+    margin: 125px;
+    width: 25%;
+    text-align: center;
+ }
+
+ #topText {
+   text-align: center;
+   text-decoration: none;
+   color:#0074e1;
+   font-size:24px;
+   font-family: 'Cabin', sans-serif;
+ }
+
+/* ================================================ */
+
+/* Homepage */
 
 #new {
     display: flex;
@@ -207,10 +238,6 @@ background-color: #2980B9;
     margin: 0 1.5%;
     width: 63%;
 }
- /*.career {
-    width: 400px;
-    
-} */
 
 .search-btn {
     height: 50px;
@@ -224,14 +251,16 @@ background-color: #2980B9;
     float: right;
     margin: 0 15%;
     top:-35px;
-    
-    
 }
 
 .search-btn:hover {
     background: #ffc107;
     cursor: pointer;
 } 
+
+/* ================================================ */
+
+/* Search Results */
 
 .micheal  {
   width: 60%;
@@ -244,7 +273,7 @@ background-color: #2980B9;
  text-align: right;
 }
 
- .micheal img {
+.micheal img {
         float: left;
         border-radius: 25%;
         width: 40%;
@@ -283,30 +312,44 @@ background-color: #2980B9;
     width:40%;
 }
 
-.signupform {
-    float: left;
-    display: block; 
-    padding: 5px;
-    margin: 125px;
-    width: 25%;
-    text-align: center;
- }
+/* ================================================ */
 
- .loginform {
-    float: right;
-    display: block; 
-    padding: 5px;
-    margin: 125px;
-    width: 25%;
-    text-align: center;
- }
+/* Set up Mentee */
 
- #topText {
-   text-align: center;
-   text-decoration: none;
-   color: blue;
- }
+h4 {
+    color:#424242;
+   font-size:18px;
+   font-family: 'Cabin', sans-serif;
+}
 
+h5 {
+    color:#424242;
+   font-size:14px;
+   font-family: 'Cabin', sans-serif;
+}
+
+input {
+  border-radius: 10px;
+  width: 30%;
+  padding:10px;
+}
+input#create{
+  border-radius: 10px;
+  width: 50%;
+  padding:10px;
+  text-align: center;
+}
+
+select.login {
+  width:30%;
+  height: 30px;
+  background-color:#e6e6e6; 
+}
+/* ================================================ */
+
+/* Testimonials */
+
+}
 #titlestatement{
 	text-align: center;
 	font-family: 'Cabin', sans-serif;
@@ -382,11 +425,15 @@ background-color: #2980B9;
 	transform: scale(1.1,1.1);
  }
 
+/* ================================================ */
+
 /* styling logout button
 #btnLogout {
 float: right;
 color: black;
 } */
+
+/* Profile Page */
 
 .account {
     display: inline-block;
@@ -550,6 +597,10 @@ color: black;
   padding: 5px;
   text-align: left;
 }
+
+/* ================================================ */
+
+/* About Page */
 
 .title {
   text-align: center;
