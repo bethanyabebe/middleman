@@ -24,8 +24,8 @@ function myFunction() {
 }
 
 // Close the dropdown menu if the user clicks outside of it
-$('#button2').click(function(event2) {
-  if (!event2.target.matches('.button2')) {
+$('#profile').click(function(event2) {
+  if (!event2.target.matches('.profile')) {
     var dropdownz = document.getElementsByClassName('dropdown2-content')
     var j
     for (j = 0; j < dropdownz.length; j++) {
