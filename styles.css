@@ -379,6 +379,7 @@ select.login {
 	color: #3d3d3d;
 	font-size: 24px;
 	opacity: 0.7;
+	text-align: center;
 }
 #testimonialbox{
 	position: relative;
