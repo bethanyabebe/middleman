@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header3">
+        <h1>MiddleMan</h1> <h2 id="login2">Account</h2>
+        <div class="dropdown">
+            <div class="dropdown">
+                <button onclick="myMenu()" class="button">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Testimontials</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Header ends here-->
+    <!-- Your Code Here -->
+     
+    <div class="container">
+        <div class="page">
+            <div class="msgbutton">Messages</div>
+        </div>
+        <div class="account">
+            <div class="editdropdown">
+                <button onclick="editPrf()" class="edit">Edit</button>
+                <div id="edit-dropdown" class="edit-content">
+                    <form id="form2">
+                        <p class="editipt">Name <input type="text" id=prf-name></p>
+                        <p class="editipt">Image URL<input type="text" id=prf-img></p>
+                        <p class="editipt">Bio<input type="text" id=prf-bio></p>
+
+                        <input type="submit" value="Save" class="save">
+                    </form>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile">
+
+                    <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE1ODA0OTcxNTc1NTc2MDc3/andrew-carnegie-9238756-1-402.jpg" id="AC">
+                    <p id=profile-name>Andrew Carnegie</p>
+                    <p id="profile-text">
+                        I'm a Scottish-American industrialist, business magnate, and philanthropist. I led the expansion of the American steel industry in the late 19th century and became one of the richest Americans in history. I also became a leading philanthropist in the United States and in the British Empire. During the last 18 years of his life, I gave away about $350 million to charities, foundations, and universities � almost 90 percent of his fortune. My 1889 article proclaiming "The Gospel of Wealth" called on the rich to use their wealth to improve society, and stimulated a wave of philanthropy.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="page">
+                <div class="msgbutton">Calls</div>
+            </div>
+            <div class="interests">
+                <h2>Career Interests</h2>
+            </div>    
+        </div>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
+        <script src="profile.js"></script>
+    
+</body>
+</html>
