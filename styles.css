@@ -673,8 +673,9 @@ select.login {
   animation-fill-mode: forwards;
 }
 
-/* Account button (only shows when user is logged in) */
+/* ================================================ */
 
+/* Account button (only shows when user is logged in) */
 
 #profile {
   padding: 10px;
@@ -685,9 +686,9 @@ select.login {
   border-radius: 16px;
   cursor:pointer;
   position: relative;
-  left: 1170px;
+  left: 90%;
   z-index:10;
-  top: -100px;
+  top: -150px;
 }
 
 /* Dropdown button on hover & focus */
