@@ -90,6 +90,12 @@ a#footerimage{
     font-size: 30px;
     cursor: pointer
 }
+
+#log{
+    float: right;
+    font-size: 30px;
+    top: 50%;
+}
 /* ================================================ */
 
 /* Buttons and Dropdown Menus */
@@ -106,7 +112,6 @@ a#footerimage{
     cursor:pointer;
     position: relative;
     top: -75px;
-    left: 50%;
     margin-right:50%
     /* Dropdown Button */
   }
