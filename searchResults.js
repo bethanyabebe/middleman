@@ -1,4 +1,4 @@
-  var firebaseConfig = {
+    var firebaseConfig = {
     apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
     authDomain: "middleman-56862.firebaseapp.com",
     databaseURL: "https://middleman-56862.firebaseio.com",
@@ -10,27 +10,31 @@
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore(); 
 
-
 search1.addEventListener("click", function(e) { 
 e.preventDefault()
     console.log('bruh')
+ doc = db.collection("mentorUsers").get()
+    
+.then(function(doc) {
+      db.collection("mentorUsers").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) { 
+        retrieveData(doc)
+        searchResults(doc)
     });
+    });
+    });
+    });
+
+
+
     function searchResults(doc) {
-    console.log("bruh2")
+    console.log("hola3")
   var select = document.getElementById("new")
   var result = select.options[select.selectedIndex].text
-     console.log("here2")
-   if (result === doc.data().currentProfession) {
-      then (doc.data(). currentProfession) }  
-        else {
-            return "No Results Found "
-        }
-  
+     console.log("hola4")
     }
-  
-
 function retrieveData(doc) {
-    console.log("wdym")
+    console.log("hola5")
 var box = document.createElement("div");
 var name = document.createElement("p");
 name.innerHTML = doc.data().name;   
@@ -44,21 +48,28 @@ edu.innerHTML = doc.data().educationLevel;
 var work = document.createElement("p");
 work.innerHTML = doc.data().workExperience;
     box.appendChild(work);
-    
 document.getElementById("container").appendChild(box);
 }
 
- 
-  
 
+    
 
  function reloadResults(){
-     console.log("middle")
-  db.collection("mentorUsers").get().then(function(querySnapshot) {
+     console.log("hola1")
+  var select = document.getElementById("new")
+  var result = select.options[select.selectedIndex].text
+   doc = db.collection("mentorUsers").get().then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
-        console.log("bbbb")
-         retrieveData(doc)
-         searchResults(doc)
+        console.log("hola2")
+        if (result === doc.data().currentProfession) {
+            retrieveData(doc)}
+        else {
+            return "No Results Found"
+        }
+        retrieveData(doc);
+        searchResults(doc);
+      
+        
          
    })
   })
