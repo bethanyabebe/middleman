@@ -251,11 +251,11 @@ background-color: #2980B9;
     color:white;
     border-radius: 25px;
     margin-top: 60px;
-   position:static;
+   position:relative;
     font-size: 25px;
     float: right;
     margin: 0 15%;
-    top:-35px;
+    top:10%;
 }
 
 .search-btn:hover {
