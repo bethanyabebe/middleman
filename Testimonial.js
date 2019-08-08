@@ -1,17 +1,3 @@
- var firebaseConfig = {
-    apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
-    authDomain: "middleman-56862.firebaseapp.com",
-    databaseURL: "https://middleman-56862.firebaseio.com",
-    projectId: "middleman-56862",
-    storageBucket: "middleman-56862.appspot.com",
-    messagingSenderId: "814613593392",
-    appId: "1:814613593392:web:9762d421b305e2b0"
-  };
-  // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-var db = firebase.firestore();
-
   /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myMenu() {
