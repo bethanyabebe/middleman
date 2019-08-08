@@ -35,19 +35,6 @@ window.onclick = function (event) {
     }
 }
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
-    authDomain: "middleman-56862.firebaseapp.com",
-    databaseURL: "https://middleman-56862.firebaseio.com",
-    projectId: "middleman-56862",
-    storageBucket: "middleman-56862.appspot.com",
-    messagingSenderId: "814613593392",
-    appId: "1:814613593392:web:aaa1fe72b5b3f70a"
-  };
-//initialize firebase
-firebase.initializeApp(firebaseConfig);
-
-var db = firebase.firestore();
 
 $("#form2").submit(function (e) {//when submit button is clicked
     e.preventDefault(); //prevents logged info from deleting @refresh
