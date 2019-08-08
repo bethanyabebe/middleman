@@ -672,6 +672,9 @@ select.login {
   margin-left: 27%;
   margin-right: 27%;
   line-height: 40px;
+  animation: fadeInAnimation ease 10s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;  
 }
 .info h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
