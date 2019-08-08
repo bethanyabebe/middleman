@@ -67,7 +67,7 @@ a {
 
 footer{
   background-color:#b0c4d6;
-  position: static;
+  position: fixed;
   height:10%;
   bottom: 0px;
   width: 100%;
