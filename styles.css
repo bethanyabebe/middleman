@@ -692,7 +692,7 @@ select.login {
   border: none;
   border-radius: 16px;
   cursor:pointer;
-  position: absolute;
+  position: relative;
   left: 85%;
   z-index:10;
 }
