@@ -694,7 +694,6 @@ select.login {
   cursor:pointer;
   position: absolute;
   right: 85%;
-  top: 35px;
   z-index:10;
 }
 
