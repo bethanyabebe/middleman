@@ -669,7 +669,9 @@ select.login {
   padding-bottom: 7%; 
   text-align: center;
   margin-top: 0px;
-  
+  margin-left: 27%;
+  margin-right: 27%;
+  line-height: 40px;
 }
 .info h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
