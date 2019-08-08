@@ -1,4 +1,4 @@
-    var firebaseConfig = {
+   var firebaseConfig = {
     apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
     authDomain: "middleman-56862.firebaseapp.com",
     databaseURL: "https://middleman-56862.firebaseio.com",
@@ -25,9 +25,7 @@ e.preventDefault()
     });
     });
 
-
-
-    function searchResults(doc) {
+function searchResults(doc) {
     console.log("hola3")
   var select = document.getElementById("new")
   var result = select.options[select.selectedIndex].text
@@ -45,14 +43,15 @@ current.innerHTML = doc.data().currentProfession;
 var edu = document.createElement("p");
 edu.innerHTML = doc.data().educationLevel;
      box.appendChild(edu);
-var work = document.createElement("p");
-work.innerHTML = doc.data().workExperience;
-    box.appendChild(work);
 document.getElementById("container").appendChild(box);
-}
-
-
+ var button = document.createElement("button");
+ button.innerHTML = "Learn More!";
+ box.appendChild(button);
+button.addEventListener("click", function() {
+    window.location.href = "mentorpage.html"
     
+});
+} 
 
  function reloadResults(){
      console.log("hola1")
@@ -66,17 +65,12 @@ document.getElementById("container").appendChild(box);
         else {
             return "No Results Found"
         }
-        retrieveData(doc);
-        searchResults(doc);
-      
-        
-         
+        retrieveData(doc);      
    })
   })
 }
-   
-
 $(document).ready(function() {
+    console.log("work1")
     reloadResults()
   }); 
 
