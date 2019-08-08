@@ -295,7 +295,18 @@ background-color: #2980B9;
 /* Search Results */
 
 #container  {
- background: linear-gradient(to bottom, orange 50%, white 50%);
+margin-top: 5%;
+ background: orange;
+ border: 10px, solid;
+ width: 100%;
+font-size: 30px;
+text-align:center;     
+}
+
+#but2 {
+    position: absolute;
+        left: 60%
+}
 
 /* ================================================ */
 
