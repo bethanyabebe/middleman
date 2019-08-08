@@ -762,7 +762,7 @@ background-color: #2980B9;
 #myDropdown2 {
     left: -100px;
     z-index:10;
-    top: 20px;
+    top: -40px;
 }
 
 
