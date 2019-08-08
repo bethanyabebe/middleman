@@ -758,6 +758,13 @@ background-color: #2980B9;
     width: 150%;
 }
 
+/*dropdown for profile*/
+#myDropdown2 {
+    left: -100px;
+    z-index:10;
+    top: 20px;
+}
+
 
 
 /*end*/
