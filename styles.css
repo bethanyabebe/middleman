@@ -480,6 +480,16 @@ select.login {
     border-style: solid;
     border-radius: 16px;
 }
+.msgbutton {
+    background-color: #0074e1;
+    color: white;
+    padding: 16px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    width: auto;
+    border: none;
+    border-radius: 0px;
+  }
 #calls {
     width: 300px;
     height: 100%;
