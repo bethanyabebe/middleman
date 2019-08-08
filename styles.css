@@ -713,7 +713,7 @@ background-color: #2980B9;
   min-width: 200px;
   min-height: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 100px;
+  left: -50px;
   z-index:10;
   top: 0px;
   } 
