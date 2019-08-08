@@ -1,6 +1,7 @@
 body{ 
     background: white;
     font-family: 'Cabin', sans-serif;
+    width:100%;
 }
 
 /* The header for all the pages */
