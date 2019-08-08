@@ -57,12 +57,11 @@ a {
 
 #login2 {
     position: absolute;
-    left: 90%;
+    left: 85%;
     top: 20px;
     color:#0074e1;
     font-size: 30px;
     cursor: pointer;
-    margin:10px;
 }
 
 footer{
