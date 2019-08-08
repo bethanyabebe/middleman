@@ -760,9 +760,9 @@ background-color: #2980B9;
 
 /*dropdown for profile*/
 #myDropdown2 {
-    left: -100px;
+    left: 100px;
     z-index:10;
-    top: -40px;
+    top: -20px;
 }
 
 
