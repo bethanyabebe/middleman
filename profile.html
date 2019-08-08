@@ -6,20 +6,27 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="header">
-         <a href= "index.html"> <h1 id="header2"> MiddleMan</h1> </a> <h2 id="login2">Account</h2>
-        <div class="dropdown">
-            <div class="dropdown">
-                <button onclick="myMenu()" class="button">Menu</button>
-                <div id="myDropdown" class="dropdown-content">
+      <div class="header">
+          <a href= "index.html"> <h1 id="header2"> MiddleMan</h1> </a> 
+                    <div class="dropdown">
+                 <div class="dropdown">
+                  <button onclick="myMenu()" class="button">Menu</button>
+                  <div id="myDropdown" class="dropdown-content">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
                     <a href="Testimonial.html">Testimontials</a>
+                  </div>
                 </div>
-            </div>
+                </div>
+         <div class= "dropdown2" id= "dropdown2">
+  <img onclick= "myFunction()" id= "profile" src= "profile.png" width= "40" height= "100"> </button> 
+    <div id="myDropdown2" class="dropdown2-content">
+      <a href="profile.html">My Profile</a> 
+      <a href="index.html" id= "btnLogout">Log Out</a>
+    </div>
+  </div>
         </div>
-    </div> <!-- Header ends here-->
-    <!-- Your Code Here -->
+                </div> 
      
     <div class="container">
         <div class="page">
@@ -61,12 +68,30 @@
 <a href="#" id="footerimage"><img id="icon" src="ig.jpg"></a><a href="#" id="footerimage"><img id="icon" src="tw.png"></a><a href="#" id="footerimage"><img id="icon" src="fb.png"></a><a href="#" id="footerimage"><img id="icon" src="em.jpg"></a>
 </div>
 </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-storage.js"></script>
-        <script src="profile.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>  
+
+        <script>  
+                var firebaseConfig = {
+                    apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
+                    authDomain: "middleman-56862.firebaseapp.com",
+                    databaseURL: "https://middleman-56862.firebaseio.com",
+                    projectId: "middleman-56862",
+                    storageBucket: "middleman-56862.appspot.com",
+                    messagingSenderId: "814613593392",
+                    appId: "1:814613593392:web:9762d421b305e2b0"
+                  };
+                  
+                  firebase.initializeApp(firebaseConfig);
+                  var db = firebase.firestore(); 
+                  </script>
+
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+        <script src="homepage.js"></script>
     
 </body>
 </html>
