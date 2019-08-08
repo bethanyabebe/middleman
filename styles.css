@@ -132,7 +132,7 @@ a#footerimage{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   left: 50px;
   z-index:10;
-  top: 110px;
+  top: 200px;
   /* Dropdown Content (Hidden by Default) */
 }
 
