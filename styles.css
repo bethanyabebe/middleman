@@ -67,6 +67,7 @@ a {
 
 footer{
   background-color:#b0c4d6;
+  position: static;
   height:10%;
   bottom: 0px;
   width: 100%;
@@ -326,7 +327,7 @@ h5 {
 
 input {
   border-radius: 10px;
-  width: 30%;
+  width: 30%;   
   padding:10px;
 }
 input#create{
