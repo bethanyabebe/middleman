@@ -1,5 +1,5 @@
 function myMenu() {
-  document.getElementById('myDropdown').classList.toggle('show')
+  document.getElementsByClass('dropdown-content').classList.toggle('show')
 }
 
 $('#button').click(function(event) {
