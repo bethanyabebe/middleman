@@ -353,6 +353,19 @@ text-align:center;
         left: 60%
 }
 
+search1{
+    height: 75px;
+    width: 150px;
+    background: #FF8C00;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    position: relative;
+    top:75px;
+    left:67%;
+}
+
 /* ================================================ */
 
 /* Set up Mentee */
