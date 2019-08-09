@@ -44,18 +44,22 @@ function retrieveData(doc) {
 var box = document.createElement("div");
 var name = document.createElement("p");
 name.innerHTML = doc.data().name;   
+name.id = "mentorname"
     box.appendChild(name); 
 var current = document.createElement("p")
 current.innerHTML = doc.data().currentProfession;
+current.id = "mentorcurrent"
      box.appendChild(current);
 var edu = document.createElement("p");
 edu.innerHTML = doc.data().educationLevel;
+edu.id = "mentoredu"
      box.appendChild(edu);
 var bio = document.createElement("p");
 bio.innerHTML = doc.data().bio
+bio.id = "mentorbio"
     box.appendChild(bio)
 var line = document.createElement("p");
-line.innerHTML = "================================================"
+line.innerHTML = "=================================================================="
     box.appendChild(line);
 document.getElementById("container").appendChild(box);
  
