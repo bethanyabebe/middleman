@@ -327,6 +327,19 @@ background-color: #2980B9;
     cursor: pointer;
 } 
 
+#searchhomepage{
+    height: 75px;
+    width: 60%;
+    background:#FF8C00;
+    border: none;
+    color:white;
+    border-radius: 25px;
+    margin-top: 60px;
+    position:relative;
+    font-size: 25px;
+    float: right;
+    margin: 20px 20% 0% 3%;
+}
 /* ================================================ */
 
 /* Search Results */
