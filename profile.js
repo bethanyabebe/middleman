@@ -107,3 +107,26 @@ function addNewItem(career_text) {
     });
 
     };
+
+
+const btnLogout = document.getElementById('btnLogout');
+var profile = document.getElementById('profile');
+var log = document.getElementById('login2');
+
+
+btnLogout.addEventListener('click', e => {
+    firebase.auth().signOut();
+    }); 
+
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+       if (firebaseUser) {
+           console.log(firebaseUser); 
+           log.style.display= 'none';
+           profile.style.display= 'hidden';
+              }
+              else {
+           console.log('not logged in')
+           log.style.display= 'hidden';
+           profile.style.display= 'none';
+                  }
+              })
