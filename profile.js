@@ -82,4 +82,28 @@ function loadProfile() {
 $(document).ready(function () {
     loadProfile()
 });
+$("#form3").submit(function (e) {
+    e.preventDefault();
+    console.log("form submitted!")
 
+    var career = document.getElementById("interests");
+    var career_text = career.value;
+
+    addNewItem(career_text)
+
+    career.value = "";// Your code here!
+});
+function addNewItem(career_text) {
+
+    var career_text_elem = document.createElement("p");
+    career_text_elem.innerHTML = career_text;
+    career.appendChild(career_text_elem);
+    document.getElementById("career").appendChild(career_text_elem)
+
+    career_text_elem.addEventListener("click", function () {
+        var career_text_id = String(Math.random())//assigns a number to each sticky note
+        career_text_elem.id = career_text_id
+        document.getElementById(career_text_elem.id).remove()//removes the sticky note
+    });
+
+    };
