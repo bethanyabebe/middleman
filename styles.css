@@ -338,8 +338,7 @@ background-color: #2980B9;
 
 #container  {
 margin-top: 5%;
- background: gray;
- border: 10px, solid, grey;
+ background: lightgray;
  width: 100%;
 text-align:center;     
 }
@@ -362,19 +361,20 @@ text-align:center;
 }
 #mentorname{
     padding:10px;
-    font-size:24px;
+    font-size:36px;
     font-weight:bold;
 }
 #mentorcurrent{
     padding:10px;
-    font-size:18px;
+    font-size:24px;
 }
 #mentoredu{
     padding:10px;
-    font-size:18px;
+    font-size:24px;
 }
 #mentorbio{
-    padding:10px, 20px, 0px, 20px
+    padding:10px 20px 0px 20px;
+    font-size:18px
 }
 
 /* ================================================ */
