@@ -4,16 +4,6 @@ body{
     width:100%;
 }
 
-body#homepage{ 
-    background: white;
-    background-image: ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Cabin', sans-serif;
-    margin:0px;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-} 
 
 /* ================================================ */
 
@@ -32,6 +22,8 @@ img#homepageimage{
   position: relative;
   width: 50%;
   height:55%;
+  transition-duration: 2s;
+  transition-timing-function: linear;
 }
 
 /* The header for all the pages */
