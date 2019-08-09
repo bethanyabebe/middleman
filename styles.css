@@ -335,9 +335,6 @@ background-color: #2980B9;
     float: right;
     margin: 20px 20% 0% 3%;
 }
-/* ================================================ */
-
-/* Search Results */
 
 #container  {
 margin-top: 5%;
@@ -363,6 +360,22 @@ text-align:center;
     position: relative;
     top:75px;
     left:67%;
+}
+#mentorname{
+    padding:10px;
+    font-size:24px;
+    font-weight:bold;
+}
+#mentorcurrent{
+    padding:10px;
+    font-size:18px;
+}
+#mentoredu{
+    padding:10px;
+    font-size:18px;
+}
+#mentorbio{
+    padding:10px, 20px, 0px, 20px
 }
 
 /* ================================================ */
@@ -966,8 +979,7 @@ background-color: #2980B9;
     right: 5%;
 }
 
-
-#2ndsearch {
+#search4 {
 position: absolute;
 right: 35%;
 }
