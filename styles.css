@@ -957,6 +957,7 @@ background-color: #2980B9;
 .kelly  {
   width: 60%;
   border: 15px solid #0074e1;
+  border-radius:15px;
   padding: 10px;
   height: 100%;
   margin-top: 50px;
