@@ -314,10 +314,7 @@ background-color: #2980B9;
     border: none;
     color: white;
     border-radius: 25px;
-    position: relative;
     font-size: 25px;
-    top: 75px;
-    left: 67%;
 }
 
 .search-btn:hover {
