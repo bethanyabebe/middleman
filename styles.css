@@ -1,11 +1,9 @@
 body{ 
     background: white;
-    background-image: url("homepage1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Cabin', sans-serif;
-    margin:0px;
-} 
+    width:100%;
+}
+
 body#homepage{ 
     background: white;
     background-image: ;
@@ -16,6 +14,7 @@ body#homepage{
     transition-duration: 2s;
     transition-timing-function: linear;
 } 
+
 /* ================================================ */
 
 /* Homepage */
@@ -34,19 +33,26 @@ img#homepageimage{
   width: 50%;
   height:55%;
 }
-/* ================================================ */
 
 /* The header for all the pages */
+
+.header h1 {
+    color:#0074e1;
+    text-align: center;
+    font-size: 75px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    top:-7%;
+}
 
 .header {
     border-bottom: solid;
     border-color: #fd6a02;
     border-width: 15px;
     margin: 0px;
-    padding: 0px;
     width: 100%;
     height:100px;
-    background-color: white;
 }
 h1#header2  {
     color:#0074e1;
@@ -78,6 +84,22 @@ a {
     border-color: #fd6a02;
     border-width: 15px;
     margin: 0px;
+}
+
+#login2 {
+    position: absolute;
+    left: 85%;
+    top: 35px;
+    color:#0074e1;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header3 {
+    border-bottom: solid;
+    border-color: #fd6a02;
+    border-width: 15px;
+    margin: 0px;
     padding: 0px;
     width: 100%;
     height:100px;
@@ -85,20 +107,11 @@ a {
     opacity: 0.8;
   }
 
-#login2 {
-    position: absolute;
-    left: 85%;
-    top: 20px;
-    color:#0074e1;
-    font-size: 30px;
-    cursor: pointer
-}
-
 footer{
   background-color:#b0c4d6;
+  position: fixed;
   height:10%;
   bottom: 0px;
-  position: absolute;
   width: 100%;
   margin: 0px;
   left:0px;
@@ -142,7 +155,7 @@ a#footerimage{
   }
 
 .button:hover, .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: #4f9ae0;
 /* Dropdown button on hover & focus */    
 }
 
@@ -159,9 +172,9 @@ a#footerimage{
   min-width: 200px;
   min-height: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 70px;
+  left: 61px;
   z-index:10;
-  top: -55px;
+  top: -19px;
   /* Dropdown Content (Hidden by Default) */
 }
 
@@ -217,9 +230,9 @@ background-color: #2980B9;
   min-width: 200px;
   min-height: 200px;
   /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
-    right: 70px;
+    right: 100px;
     z-index:10;
-    top: -30px;
+    top: 100px;
   /* Dropdown Content (Hidden by Default) */  
   } 
  
@@ -325,7 +338,18 @@ background-color: #2980B9;
 /* Search Results */
 
 #container  {
- background: linear-gradient(to bottom, orange 50%, white 50%);
+margin-top: 5%;
+ background: orange;
+ border: 10px, solid;
+ width: 100%;
+font-size: 30px;
+text-align:center;     
+}
+
+#but2 {
+    position: absolute;
+        left: 60%
+}
 
 /* ================================================ */
 
@@ -345,7 +369,7 @@ h5 {
 
 input {
   border-radius: 10px;
-  width: 30%;
+  width: 30%;   
   padding:10px;
 }
 input#create{
@@ -364,7 +388,6 @@ select.login {
 
 /* Testimonials */
 
-}
 #titlestatement{
   text-align: center;
   font-family: 'Cabin', sans-serif;
@@ -510,6 +533,16 @@ select.login {
     border-style: solid;
     border-radius: 16px;
 }
+.msgbutton {
+    background-color: #0074e1;
+    color: white;
+    padding: 16px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    width: auto;
+    border: none;
+    border-radius: 0px;
+  }
 #calls {
     width: 300px;
     height: 100%;
@@ -689,7 +722,12 @@ select.login {
   padding-bottom: 7%; 
   text-align: center;
   margin-top: 0px;
-  
+  margin-left: 27%;
+  margin-right: 27%;
+  line-height: 40px;
+  animation: fadeInAnimation ease 10s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;  
 }
 .info h2 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -711,6 +749,7 @@ select.login {
   border-radius: 16px;
   cursor:pointer;
   position: relative;
+  left: 85%;
   z-index:10;
 }
 
@@ -723,8 +762,8 @@ background-color: #2980B9;
 .dropdown2 {
   position: relative;
   display: inline-block;
-  top: -125px;
-  left:1075%;
+  top: -100px;
+  left:80%;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -737,9 +776,9 @@ background-color: #2980B9;
   min-width: 200px;
   min-height: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  left: 1100px;
+  left: -85px;
   z-index:10;
-  top: 0px;
+  top: 15px;
   } 
   
   /* Links inside the dropdown */
@@ -757,7 +796,7 @@ background-color: #2980B9;
   /* Show the dropdown menu */
   .show2 {display:block;} 
 
-  #logo {
+#logo {
     width: 150%;
 }
 
