@@ -295,23 +295,17 @@ background-color: #2980B9;
 /* Homepage */ /*Search Results*/
 
 #new {
-    display: flex;
+ 
     background-position: center;
-    justify-content: center;
     align-items: center;
     /*width: 400px;*/
     height: 75px;
     /*width: 900px; */
-    padding:10px;
     border: none;
     border-radius: 25px;
-    outline: none;
     background-color: gainsboro;
     color: darkorange;
     font-size:25px;
-    float: left;
-    margin: 20px 1.5%;
-    width: 63%;
 }
 
 .search-btn {
@@ -920,6 +914,55 @@ background-color: #2980B9;
 .us {
   font-size: 20px;
   margin: 0px;
+}
+/* ======================================================== */
+ /*Mentor Page*/
+
+.kelly  {
+  width: 60%;
+  border: 15px solid #0074e1;
+  padding: 10px;
+  height: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ background-color: lightgray;
+
+}
+
+.kelly img {
+    object-position: center;
+    border-radius: 25%;
+    width:35%;
+}
+
+#search3 {
+    position: absolute;
+    right: 45%;
+}
+#search2 {
+    position: absolute;
+    right: 5%;
+}
+
+#2ndsearch {
+position: absolute;
+right: 35%;
+}
+
+#learnMore {
+    height: 75px;
+    width: 150px;
+    background:#fd6a02;
+    border: none;
+    color:white;
+    border-radius: 25px;
+    margin-top: 60px;
+   position:absolute;
+    font-size: 25px;
+    float: right;
+    top: 18%;
 }
 
 /*end*/
