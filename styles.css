@@ -338,10 +338,9 @@ background-color: #2980B9;
 
 #container  {
 margin-top: 5%;
- background: orange;
- border: 10px, solid;
+ background: gray;
+ border: 10px, solid, grey;
  width: 100%;
-font-size: 30px;
 text-align:center;     
 }
 
