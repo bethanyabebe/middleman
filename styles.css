@@ -363,18 +363,22 @@ text-align:center;
     padding:10px;
     font-size:36px;
     font-weight:bold;
+    margin:0px;
 }
 #mentorcurrent{
     padding:10px;
     font-size:24px;
+    margin:0px;
 }
 #mentoredu{
     padding:10px;
     font-size:24px;
+    margin:0px;
 }
 #mentorbio{
     padding:10px 20px 0px 20px;
-    font-size:18px
+    font-size:18px;
+    margin:0px;
 }
 
 /* ================================================ */
