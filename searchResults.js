@@ -54,6 +54,9 @@ edu.innerHTML = doc.data().educationLevel;
 var bio = document.createElement("p");
 bio.innerHTML = doc.data().bio
     box.appendChild(bio)
+var line = document.createElement("p");
+line.innerHTML = "================================================"
+    box.appendChild(line);
 document.getElementById("container").appendChild(box);
  
 };
