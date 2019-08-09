@@ -16,12 +16,14 @@ $('#button').click(function(event) {
 });
 
 function changeImage(doc){
-    randomimagearray = [doc.data().Image1, doc.data().Image2, doc.data().Image3, doc.data().Image4, doc.data().Image5, doc.data().Image6, doc.data().Image7]
-    randomimage = randomimagearray[Math.floor(Math.random()*randomimagearray.length)]
-    document.getElementById('homepage').style.backgroundImage = 'url("' + randomimage + '.jpg")';
+    var image = document.createElement("img");
+    image.id = "homepageimage"
+    document.getElementById("picturecell").appendChild(image)
+
     setInterval(function(){ randomimagearray = [doc.data().Image1, doc.data().Image2, doc.data().Image3, doc.data().Image4, doc.data().Image5, doc.data().Image6, doc.data().Image7]
-    randomimage = randomimagearray[Math.floor(Math.random()*randomimagearray.length)]
-    document.getElementById('homepage').style.backgroundImage = 'url("' + randomimage + '.jpg")'; }, 5000);
+    randomimage = randomimagearray[Math.floor(Math.random()*randomimagearray.length)]              
+    image.src = 'url("' + randomimage + '.jpg")'; }, 5000);
+     
     
 }
 
