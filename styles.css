@@ -650,7 +650,7 @@ select.login {
   color: white;
   font-family: 'Cabin', sans-serif;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px;
   text-align: left;
 }
