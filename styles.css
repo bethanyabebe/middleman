@@ -310,15 +310,14 @@ background-color: #2980B9;
 .search-btn {
     height: 75px;
     width: 150px;
-    background:#FF8C00;
+    background: #FF8C00;
     border: none;
-    color:white;
+    color: white;
     border-radius: 25px;
-    margin-top: 60px;
-   position:relative;
+    position: relative;
     font-size: 25px;
-    float: right;
-    margin: 20px 20% 0% 3%;
+    top: 75px;
+    left: 67%;
 }
 
 .search-btn:hover {
@@ -967,16 +966,16 @@ right: 35%;
 #learnMore {
     height: 75px;
     width: 150px;
-    background:#fd6a02;
+    background: #FF8C00;
     border: none;
-    color:white;
+    color: white;
     border-radius: 25px;
     margin-top: 60px;
-   position:absolute;
+    position: absolute;
     font-size: 25px;
     float: right;
-    top: 30px;
-    left: 10px;
+    top: 210px;
+    left: 80%;
 }
 
 /*end*/
