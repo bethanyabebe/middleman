@@ -48,6 +48,7 @@ bio.id = "mentorbio"
     box.appendChild(bio)
 var line = document.createElement("p");
 line.innerHTML = "======================================"
+    box.appendChild(line)
 document.getElementById("container").appendChild(box);
  
 };
