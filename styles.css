@@ -497,6 +497,17 @@ select.login {
   left: 35%;
   top: -40%;
 }
+#interests {
+  width: 30%;
+  height: 30%;
+  border-color: #0074e1;
+  border-width: 5px;
+  border-style: double;
+  border-radius: 16px;
+  position: relative;
+  left: 35%;
+  top: -40%;
+}
 
 #profile-name{
   font-display: bold;
