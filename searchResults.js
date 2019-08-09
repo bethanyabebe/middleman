@@ -1,4 +1,4 @@
-   var firebaseConfig = {
+  var firebaseConfig = {
     apiKey: "AIzaSyDxhIg82JXWxzP8Aqfum_3i5cbLkJ3Kxn0",
     authDomain: "middleman-56862.firebaseapp.com",
     databaseURL: "https://middleman-56862.firebaseio.com",
@@ -10,8 +10,14 @@
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore(); 
 
+var learnMore = document.getElementById("learnMore");
+learnMore.style.display= "none"
+
+
 search1.addEventListener("click", function(e) { 
 e.preventDefault()
+    var learnMore = document.getElementById("learnMore");
+    learnMore.style.display= "block";
     console.log('bruh')
  doc = db.collection("mentorUsers").get()
     
@@ -25,7 +31,9 @@ e.preventDefault()
     });
     });
 
-function searchResults(doc) {
+
+
+    function searchResults(doc) {
     console.log("hola3")
   var select = document.getElementById("new")
   var result = select.options[select.selectedIndex].text
@@ -43,15 +51,14 @@ current.innerHTML = doc.data().currentProfession;
 var edu = document.createElement("p");
 edu.innerHTML = doc.data().educationLevel;
      box.appendChild(edu);
+var bio = document.createElement("p");
+bio.innerHTML = doc.data().bio
+    box.appendChild(bio)
 document.getElementById("container").appendChild(box);
- var button = document.createElement("button");
- button.innerHTML = "Learn More!";
- box.appendChild(button);
-button.addEventListener("click", function() {
-    window.location.href = "mentorpage.html"
-    
-});
-} 
+ 
+};
+
+  
 
  function reloadResults(){
      console.log("hola1")
@@ -65,10 +72,12 @@ button.addEventListener("click", function() {
         else {
             return "No Results Found"
         }
-        retrieveData(doc);      
+        retrieveData(doc);       
+         
    })
   })
 }
+
 $(document).ready(function() {
     console.log("work1")
     reloadResults()
